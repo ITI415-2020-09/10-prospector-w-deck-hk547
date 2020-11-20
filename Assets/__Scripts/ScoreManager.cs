@@ -67,7 +67,7 @@ public class ScoreManager : MonoBehaviour
                 scoreRun = 0;          // reset scoreRun
                 break;
             case eScoreEvent.mine:     // Remove a mine card
-                chain++;               // increase the score chain
+                chain = (chain+1)*2;               // increase the score chain
                 scoreRun += chain;     // add score for this card to run
                 break;
         }
